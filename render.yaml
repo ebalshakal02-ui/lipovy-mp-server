@@ -1,0 +1,15 @@
+# Render Blueprint — развёртывание мультиплеер-сервера в один клик.
+# Положи эту папку (server/) в GitHub-репозиторий и в Render выбери
+# "New +" → "Blueprint" → укажи репозиторий. Всё остальное подтянется отсюда.
+services:
+  - type: web
+    name: lipovy-mp-server
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /
+    autoDeploy: true
+    envVars:
+      - key: NODE_VERSION
+        value: 18.0.0

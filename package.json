@@ -1,0 +1,14 @@
+{
+  "name": "lipovy-mp-server",
+  "version": "0.11.0",
+  "private": true,
+  "type": "module",
+  "description": "Мультиплеер-сервер «Липовый отличник» — WebSocket-ретранслятор комнат.",
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "ws": "^8.18.0"
+  }
+}
